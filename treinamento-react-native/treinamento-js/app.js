@@ -58,10 +58,9 @@ const media_const = 6; //constante
 
 fetch("http://api-tweets-neymar.herokuapp.com/tweets#index")
 .then(json => json.json())
-.then(resp => console.warn(resp)
+.then(resp => console.warn(resp))
 .catch(e => console.warn(e));
 
- 
 
 
  // async function teste() {}

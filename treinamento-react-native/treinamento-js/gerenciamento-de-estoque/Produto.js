@@ -3,8 +3,8 @@ class Produto {
 	contructor(nome, preco){
 		this.nome = nome;
 		this.preco = preco;
-		this.codigo = codigo++;
-		this.quantidade = quantidade;
+		this.codigo = 0;
+		this.quantidade = 0;
 	}
 
 	getPreco() {
@@ -21,6 +21,10 @@ class Produto {
 
 	setPreco(preco) {
 		this.preco = preco;
+	}
+
+	setQuantidade(quantidade) {
+		this.quantidade = this.quantidade + quantidade;
 	}
 
 }
